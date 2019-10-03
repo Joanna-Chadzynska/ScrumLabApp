@@ -3,15 +3,24 @@ import AddWidget from "./AddWidget";
 import InfoWidget from "./InfoWidget";
 import Plan from "./Plan";
 
-const Dashboard = ({ addNewRecipe, isAddRecipe, addNewPlan, isAddPlan }) => {
+const Dashboard = ({
+  addNewRecipe,
+  isAddRecipe,
+  addNewPlan,
+  isAddPlan,
+  isAddShopList,
+  addNewShopList
+}) => {
   return (
-    <div className="dashboard">
-      <div className="dashboard__widgets">
+    <div className='dashboard'>
+      <div className='dashboard__widgets'>
         <AddWidget
           isAddRecipe={isAddRecipe}
           addNewRecipe={addNewRecipe}
           addNewPlan={addNewPlan}
           isAddPlan={isAddPlan}
+          isAddShopList={isAddShopList}
+          addNewShopList={addNewShopList}
         />
         <InfoWidget />
       </div>

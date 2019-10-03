@@ -1,0 +1,16 @@
+.shopList {
+  border: 1px dashed gray;
+  background-color: #fffffa;
+  color: #4a4a49;
+  height: calc(100vh - 70px - 6rem);
+  margin: 5rem auto;
+  width: 75vw;
+  padding: 2rem;
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    right: 32px;
+    top: 10px;
+  }
+}

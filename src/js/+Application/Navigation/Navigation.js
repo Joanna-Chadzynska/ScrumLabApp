@@ -20,6 +20,10 @@ const Navigation = () => {
           <NavLink to='/app/plan'>Plany</NavLink>
           <i className='fa fa-chevron-right' aria-hidden='true'></i>
         </li>
+        <li>
+          <NavLink to='/app/zakupy'>Lista Zakupów</NavLink>
+          <i className='fa fa-chevron-right' aria-hidden='true'></i>
+        </li>
       </ul>
     </nav>
   );
