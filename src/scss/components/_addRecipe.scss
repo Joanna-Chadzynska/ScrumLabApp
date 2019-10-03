@@ -1,0 +1,210 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.addRecipe {
+  border: 1px dashed gray;
+  background-color: #fffffa;
+  color: #4a4a49;
+  height: calc(100vh - 70px - 6rem);
+  margin: 5rem auto;
+  width: 75vw;
+  padding: 2rem;
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    right: 32px;
+    top: 10px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #cbcbcb;
+    padding-bottom: 0.5rem;
+
+    h2 {
+      color: #ff6600;
+      text-transform: uppercase;
+    }
+
+    button {
+      background-color: #ff6600;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 6px 10px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: lighten(#ff6600, 10%);
+      }
+    }
+
+    .error-message {
+      font-size: 1rem;
+    }
+  }
+
+  &__desc-inputs {
+    .addRecipe__input-box {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+
+      .error-message {
+        color: #bd4932;
+        align-self: center;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 15px;
+        margin: 5px 0;
+      }
+
+      .input-element {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        width: 90%;
+        padding-top: 1rem;
+        position: relative;
+
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          opacity: 0.8;
+        }
+
+        input,
+        textarea {
+          width: 38rem;
+          font-size: 1rem;
+          font-family: Arial;
+          opacity: 0.6;
+          padding-left: 1rem;
+        }
+
+        textarea {
+          padding-top: 0.5rem;
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+
+  &__instructions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.addRecipe__container {
+  width: 50%;
+  height: 45vh;
+  padding: 0 0.5rem;
+
+  h2 {
+    border-bottom: 2px solid #cbcbcb;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  .addRecipe__input-box-instr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    position: relative;
+
+    .error-message {
+      color: #bd4932;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      padding-top: 0.4rem;
+      top: -10px;
+      // left: 0;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      font-family: Arial;
+      font-size: 1rem;
+      opacity: 0.6;
+      width: 90%;
+    }
+
+    textarea {
+      height: 4.75rem;
+    }
+
+    i {
+      color: #468966;
+      transition: 0.3s;
+
+      &:hover {
+        color: darken(#468966, 10%);
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+.addRecipe__form-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .addRecipe__list {
+    width: 90%;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    ol,
+    ul {
+      margin-left: 2rem;
+
+      .not-edit-mode {
+        display: flex;
+      }
+
+      li i {
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0 0.3rem;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      i.fa-edit {
+        color: #ffb03b;
+      }
+
+      .fa-trash-o {
+        color: #bd4932;
+      }
+    }
+  }
+}
+
+.error {
+  border: 2px solid #bd4932;
+}

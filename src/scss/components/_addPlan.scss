@@ -1,0 +1,171 @@
+.addPlan__container {
+  border: 1px dashed black;
+  background-color: #fffffa;
+  color: #4a4a49;
+  height: calc(100vh - 70px - 6rem);
+  width: 75vw;
+  padding: 2rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    right: 32px;
+    top: 10px;
+  }
+}
+
+.addPlan_header__box {
+  width: 100%;
+  border-bottom: 2px solid #a6a699;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    color: #ff6600;
+  }
+
+  button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px 10px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: lighten(#ff6600, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .error-message {
+    font-size: 1rem;
+  }
+}
+
+.addPlan__form {
+  width: 100%;
+  // height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .addPlan_input__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-bottom: 2rem;
+  }
+
+  .addPlan_input__el {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    width: 90%;
+    padding-top: 1rem;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .addPlan_input__week {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+
+    h3 {
+      padding-right: 1rem;
+    }
+  }
+
+  .week_number {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .week_number.error {
+    border: 2px solid #bd4932;
+    width: 3rem;
+    height: 2rem;
+  }
+
+  input,
+  textarea {
+    width: 42rem;
+    font-size: 1rem;
+    font-family: Arial;
+    opacity: 0.6;
+    padding-left: 1rem;
+  }
+
+  textarea {
+    // width: 55rem;
+    padding-top: 0.5rem;
+    height: 4.5rem;
+  }
+}
+
+.addPlan_table__container {
+  height: 55%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addPlan_table__header {
+  width: 90%;
+}
+
+.addPlan__table {
+  border-collapse: collapse;
+  width: 100%;
+
+  td {
+    color: #a6a699;
+    padding: 0.7rem 0.3rem;
+    border-bottom: 2px solid #cfcfce;
+  }
+
+  th {
+    color: #a6a699;
+    font-size: 17px;
+    border-bottom: 2px solid #cfcfce;
+    border-top: 2px solid #cfcfce;
+    padding: 10px;
+    text-align: left;
+  }
+
+  select {
+    width: 8rem;
+    background: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+  }
+}
+
+.error-message {
+  color: #bd4932;
+  align-self: center;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  margin: 5px 0;
+}
+
+.error {
+  border: 2px solid #bd4932;
+}

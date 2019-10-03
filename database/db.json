@@ -1,0 +1,142 @@
+{
+  "user": {
+    "name": "Joanna"
+  },
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Zupa pomidorowa",
+      "description": "Pyszna zupa pomidorowa z całych pomidorów.",
+      "steps": [
+        "Wlej wodę do garnka"
+      ],
+      "ingredients": [
+        "Pomidory"
+      ]
+    },
+    {
+      "name": "Joanna",
+      "description": "coś tam coś",
+      "steps": [
+        "bla"
+      ],
+      "ingredients": [
+        "dupa",
+        "kij"
+      ],
+      "id": 2
+    },
+    {
+      "name": "Naleśniki z dżemem",
+      "description": "Trudno znaleźć kogoś, kto nie byłby fanem naleśników. Te smakowite placki można podawać na słodko i na słono. Najmłodsi uwielbiają je właśnie w wersji ze słodkimi dodatkami. Możesz je podawać na ciepło i na zimno, z ulubionym dżemem, owocami i cukrem pudrem. Jednak sekretem udanych naleśników zawsze jest doskonałe ciasto.",
+      "steps": [
+        "Mleko wlej do miski. Dodaj wodę gazowaną, jajka, cukier wanilinowy, sól i wszystko zmiksuj. Na koniec dosyp przesianą mąkę.",
+        "Gdy ciasto będzie gładkie i bez grudek, dodaj olej i jeszcze chwilę miksuj.",
+        "Rozgrzej patelnię delikatnie przetartą olejem i smaż cienkie naleśniki z obu stron na złoty kolor.",
+        "Gotowe naleśniki przekładaj na talerz. Jeśli nie zamierzasz ich od razu podawać przykryj drugim talerzem lub przykrywką, aby nie wyschły.",
+        "Naleśniki smaruj ulubionym dżemem i zawijaj w rulony, ćwiartki, bądź koperty."
+      ],
+      "ingredients": [
+        "mleko 2 szklanki",
+        "woda gazowana 0.5 szklanki",
+        "jajka 2 sztuki",
+        "cukier wanilinowy 2 łyżeczki",
+        "sól",
+        "mąka 2 szklanki",
+        "olej 3 łyżki",
+        "dżem 1 słoik"
+      ],
+      "id": 3
+    },
+    {
+      "name": "dupa",
+      "description": "sfadsfasdf",
+      "steps": [
+        "fadsf"
+      ],
+      "ingredients": [
+        "fadsf"
+      ],
+      "id": 4
+    },
+    {
+      "name": "fasdf",
+      "description": "fadsfasdfadsf",
+      "steps": [
+        "fasdfas"
+      ],
+      "ingredients": [
+        "fadsfasdfa"
+      ],
+      "id": 5
+    },
+    {
+      "name": "fadsfasdfasdfasdfadsfasdf",
+      "description": "fdsfasdfasd",
+      "steps": [
+        "fadsfasd"
+      ],
+      "ingredients": [
+        "asdfasdfasdf"
+      ],
+      "id": 6
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "name": "Wegetariański tydzień",
+      "description": "Długi opis tygodnia bez mięsa.",
+      "weekNumber": 1,
+      "monday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tuesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wednesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thrusday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "friday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "satruday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sunday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

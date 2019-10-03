@@ -1,0 +1,87 @@
+footer {
+  background-color: #5b605f;
+  height: 30vh;
+  position: relative;
+}
+
+.company {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.company__about {
+  width: 25%;
+
+  .company__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .company__desc {
+    font-size: 1.2rem;
+
+    ul li {
+      margin-left: 20px;
+      line-height: 1.5;
+    }
+
+    form {
+      margin-bottom: 1.5rem;
+
+      input {
+        padding: 10px 0;
+      }
+
+      button {
+        background-color: #ff6600;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: lighten(#ff6600, 10%);
+        }
+      }
+    }
+  }
+}
+
+// social icons
+.company__social-icons {
+  i {
+    padding: 0 1.3rem;
+  }
+
+  i:first-child {
+    padding-left: 0;
+  }
+}
+
+// copyright
+.copyright {
+  background-color: #292f32;
+  position: absolute;
+  bottom: 0;
+  height: 6vh;
+  text-align: center;
+  width: 100%;
+
+  h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    span {
+      color: #e58a20;
+    }
+  }
+}

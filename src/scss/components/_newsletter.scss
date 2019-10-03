@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Charmonman");
+
+.newsletter {
+  height: 100px;
+  background-color: #292f32;
+
+  .newsletter__container {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  input {
+    height: 35px;
+  }
+
+  button {
+    background: #ff6600;
+    border: none;
+    height: 35px;
+    padding: 0 1.9rem;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(#ff6600, 10%);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.carousel {
+  position: relative;
+
+  .slide {
+    height: 500px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  i {
+    font-size: 2.8rem;
+    opacity: 0.8;
+  }
+  .left__arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+
+  .right__arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+  }
+}

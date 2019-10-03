@@ -1,0 +1,37 @@
+.aboutapp {
+  background-color: #ebebeb;
+}
+
+.aboutapp__desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.aboutapp__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0.6;
+  width: 28%;
+  height: 100%;
+
+  .aboutapp__icon {
+    color: #a1a194;
+    padding: 1rem 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 0.8rem;
+  }
+
+  p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+}

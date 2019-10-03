@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext");
+@import "./components/header";
+@import "./components/intro";
+@import "./components/wrapper";
+@import "./components//appWrapper";
+@import "./components/carousel";
+@import "./components/newsletter";
+@import "./components/redirect";
+@import "./components/aboutApp";
+@import "./components/author";
+@import "./components/footer";
+@import "./components/application-main";
+@import "./components/navigation";
+@import "./components/welcome.scss";
+@import "./components/dashboard";
+@import "./components/addRecipe.scss";
+@import "./components/addPlan.scss";
+@import "./components/przepisy.scss";
+@import "./components/recipes";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
