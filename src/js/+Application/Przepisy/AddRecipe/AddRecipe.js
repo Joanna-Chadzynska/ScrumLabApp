@@ -140,6 +140,7 @@ const AddRecipe = ({ addRecipe, onClose }) => {
       setSteps([]);
       setIngredients([]);
       onClose();
+      window.location.reload();
       alert(`Dziękujemy za dodanie przepisu!`);
     } else {
       console.log("Formularz błędnie wypełniony");

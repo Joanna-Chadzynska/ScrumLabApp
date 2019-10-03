@@ -125,6 +125,7 @@ const AddPlan = ({ addPlan, recipes, fetchRecipes, onClose }) => {
       setDescription("");
       setWeekNumber("");
       onClose();
+      window.location.reload();
       alert("Dziękujemy za dodanie planu!");
     } else {
       // console.log("Formularz błędnie wypełniony");
