@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 // dashboard widgets
@@ -148,7 +150,6 @@
 
 // dashboard plan
 .dashboard__plan {
-  // height: 100%;
   width: 100%;
   background: #fffffa;
   border: 1px dashed black;
@@ -156,7 +157,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   text-align: center;
 
   h4 {
