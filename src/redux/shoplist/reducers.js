@@ -7,9 +7,13 @@ const initState = {
 export const shoplist = (state = initState, action) => {
   switch (action.type) {
     case ADD_TO_SHOPLIST:
+      // return {
+      //   ...state,
+      //   shoplist: action.payload
+      // };
       return Object.assign({}, state, {
         shoplist: [
-          ...state.shoplist.filter((item) => item.id !== action.payload.id),
+          ...state.shoplist.filter((item, idx) => idx !== action.payload.idx),
           action.payload
         ]
       });
@@ -17,7 +21,7 @@ export const shoplist = (state = initState, action) => {
     case REMOVE_FROM_SHOPLIST:
       return Object.assign({}, state, {
         shoplist: [
-          ...state.shoplist.filter((item) => item.id !== action.payload.id)
+          ...state.shopList.filter((item, idx) => idx !== action.payload.idx)
         ]
       });
 

@@ -9,8 +9,10 @@ const Dashboard = ({
   addNewPlan,
   isAddPlan,
   isAddShopList,
-  addNewShopList
+  addNewShopList,
+  shoplist
 }) => {
+  console.log(shoplist);
   return (
     <div className='dashboard'>
       <div className='dashboard__widgets'>

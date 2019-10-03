@@ -5,7 +5,7 @@ import AddRecipe from "../Przepisy/AddRecipe/AddRecipe";
 import AddPlan from "../Plany/AddPlan/AddPlan";
 import AddShopList from "../Zakupy/AddShopList";
 
-const Pulpit = ({ user }) => {
+const Pulpit = ({ user, shoplist }) => {
   const [isAddRecipe, setAddRecipe] = useState(false);
   const [isAddPlan, setAddPlan] = useState(false);
   const [isAddShopList, setShopList] = useState(false);
@@ -20,7 +20,6 @@ const Pulpit = ({ user }) => {
 
   const addNewShopList = (e) => {
     setShopList(!isAddShopList);
-    console.log(isAddShopList);
   };
 
   const list = () => {
@@ -43,6 +42,7 @@ const Pulpit = ({ user }) => {
         addNewPlan={addNewPlan}
         isAddShopList={isAddShopList}
         addNewShopList={addNewShopList}
+        shoplist={shoplist}
       />
     );
   };
@@ -53,7 +53,8 @@ const Pulpit = ({ user }) => {
 const mapState = (state) => {
   return {
     user: state.user.user,
-    recipes: state.recipes.recipes
+    recipes: state.recipes.recipes,
+    shoplist: state.shoplist.shoplist
   };
 };
 

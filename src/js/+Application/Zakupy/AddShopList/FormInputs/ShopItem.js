@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import "font-awesome/css/font-awesome.min.css";
 
-const Ingredient = ({ ingredient, idx, deleteIngredient }) => {
+const ShopItem = ({ idx, shopitem, deleteItem }) => {
   const [isEditMode, setEditMode] = useState(false);
-  const [newIngredient, setNewIngredient] = useState(ingredient);
+  const [newShopItem, setNewShopItem] = useState(shopitem);
 
-  const toggleEditIngredient = (e) => {
+  const toggleEdit = (e) => {
     setEditMode(!isEditMode);
   };
 
-  const handleChange = (e) => {
-    setNewIngredient(e.target.value);
+  const handleChangeItem = (e) => {
+    setNewShopItem(e.target.value);
   };
 
-  const handleClick = (e) => {
+  const updateItem = (e) => {
     setEditMode(false);
   };
-
   return (
     <>
       {isEditMode ? (
@@ -24,27 +23,27 @@ const Ingredient = ({ ingredient, idx, deleteIngredient }) => {
           <input
             type='text'
             name='step'
-            value={newIngredient}
+            value={newShopItem}
             style={{ color: "#468966" }}
-            onChange={handleChange}
+            onChange={handleChangeItem}
           />
           <i
             className='fa fa-check-square-o'
             aria-hidden='true'
-            onClick={handleClick}></i>
+            onClick={updateItem}></i>
         </li>
       ) : (
         <li className='not-edit-mode'>
-          {newIngredient}
-          <i className='fa fa-edit' onClick={toggleEditIngredient}></i>
+          {newShopItem}
+          <i className='fa fa-edit' onClick={toggleEdit}></i>
           <i
             className='fa fa-trash-o'
             aria-hidden='true'
-            onClick={() => deleteIngredient(idx)}></i>
+            onClick={() => deleteItem(idx)}></i>
         </li>
       )}
     </>
   );
 };
 
-export default Ingredient;
+export default ShopItem;

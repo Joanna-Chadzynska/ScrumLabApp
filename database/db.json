@@ -7,14 +7,23 @@
       "id": 1,
       "name": "Zupa pomidorowa",
       "description": "Pyszna zupa pomidorowa z całych pomidorów.",
-      "steps": ["Wlej wodę do garnka"],
-      "ingredients": ["Pomidory"]
+      "steps": [
+        "Wlej wodę do garnka"
+      ],
+      "ingredients": [
+        "Pomidory"
+      ]
     },
     {
       "name": "Joanna",
       "description": "coś tam coś",
-      "steps": ["bla"],
-      "ingredients": ["dupa", "kij"],
+      "steps": [
+        "bla"
+      ],
+      "ingredients": [
+        "dupa",
+        "kij"
+      ],
       "id": 2
     },
     {
@@ -42,29 +51,48 @@
     {
       "name": "dupa",
       "description": "sfadsfasdf",
-      "steps": ["fadsf"],
-      "ingredients": ["fadsf"],
+      "steps": [
+        "fadsf"
+      ],
+      "ingredients": [
+        "fadsf"
+      ],
       "id": 4
     },
     {
       "name": "fadsfasdfasdfasdfadsfasdf",
       "description": "fdsfasdfasd",
-      "steps": ["fadsfasd"],
-      "ingredients": ["asdfasdfasdf"],
+      "steps": [
+        "fadsfasd"
+      ],
+      "ingredients": [
+        "asdfasdfasdf"
+      ],
       "id": 6
     },
     {
       "name": "coś na kolację",
       "description": "jakieś tam coś na kolację",
-      "steps": ["otwórz lodówkę", "weź cokolwiek", "gotowe"],
-      "ingredients": ["zależy co jest w lodówce"],
+      "steps": [
+        "otwórz lodówkę",
+        "weź cokolwiek",
+        "gotowe"
+      ],
+      "ingredients": [
+        "zależy co jest w lodówce"
+      ],
       "id": 5
     },
     {
       "name": "fasdffasdfasdf",
       "description": "asdffasdfasd",
-      "steps": ["f", "ddd"],
-      "ingredients": ["ffafd"],
+      "steps": [
+        "f",
+        "ddd"
+      ],
+      "ingredients": [
+        "ffafd"
+      ],
       "id": 8
     }
   ],
@@ -74,13 +102,55 @@
       "name": "Wegetariański tydzień",
       "description": "Długi opis tygodnia bez mięsa.",
       "weekNumber": 1,
-      "monday": [1, 2, 3, 4, 5],
-      "tuesday": [1, 2, 3, 4, 5],
-      "wednesday": [1, 2, 3, 4, 5],
-      "thrusday": [1, 2, 3, 4, 5],
-      "friday": [1, 2, 3, 4, 5],
-      "satruday": [1, 2, 3, 4, 5],
-      "sunday": [1, 2, 3, 4, 5]
+      "monday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "tuesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wednesday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "thrusday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "friday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "satruday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sunday": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }
