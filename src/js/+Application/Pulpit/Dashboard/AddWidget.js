@@ -3,21 +3,24 @@ import "font-awesome/css/font-awesome.min.css";
 
 const AddWidget = ({ addNewRecipe, isAddRecipe, addNewPlan, isAddPlan }) => {
   return (
-    <div className="add_widget__container">
-      <div className="add_widget__box">
-        <div
-          className="add__widget recipe"
+    <div className='add_widget__container'>
+      <div className='add_widget__box'>
+        <i
+          className='fa fa-plus-square-o fa-5x'
           onClick={() => addNewRecipe(isAddRecipe)}
-        >
-          <i className="fa fa-plus"></i>
-        </div>
-        <p>dodaj przepis</p>
+        />
+        <p>przepis</p>
       </div>
-      <div className="add_widget__box">
-        <div className="add__widget plan" onClick={() => addNewPlan(isAddPlan)}>
-          <i className="fa fa-plus"></i>
-        </div>
-        <p>dodaj plan</p>
+      <div className='add_widget__box'>
+        <i
+          className='fa fa-plus-square-o fa-5x'
+          onClick={() => addNewPlan(isAddPlan)}
+        />
+        <p>plan</p>
+      </div>
+      <div className='add_widget__box'>
+        <i className='fa fa-plus-square-o fa-5x' />
+        <p>zakupy</p>
       </div>
     </div>
   );

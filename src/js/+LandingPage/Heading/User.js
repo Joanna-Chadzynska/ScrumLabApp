@@ -14,7 +14,7 @@ const User = ({ user, clearUserName, history }) => {
     <div className='header__user'>
       <h4>{user.user.name}</h4>
       <div className='header__icon'>
-        <i className='fa fa-user-circle fa-3x' onClick={handleClick}></i>
+        <i className='fa fa-user-circle-o fa-3x' onClick={handleClick}></i>
       </div>
     </div>
   );

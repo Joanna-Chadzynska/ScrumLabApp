@@ -5,7 +5,7 @@ const AboutItemTwo = () => {
   return (
     <div className='aboutapp__item'>
       <div className='aboutapp__icon'>
-        <i className='fa fa-user-circle fa-5x'></i>
+        <i className='fa fa-clock-o fa-5x'></i>
       </div>
 
       <h3>Lorem ipsum dolor sit amet</h3>

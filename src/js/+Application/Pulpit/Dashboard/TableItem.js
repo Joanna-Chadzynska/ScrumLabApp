@@ -4,7 +4,7 @@ import { getScheduleDetails } from "../../../../redux/schedules/actions";
 import { Breakfast, Lunch, Soup, Dinner, Supper } from "./Week";
 import "font-awesome/css/font-awesome.min.css";
 
-const TableItem = ({ schedule, recipe, id, previous, next }) => {
+const TableItem = ({ schedule, previous, next }) => {
   useEffect(() => {
     getScheduleDetails(schedule.id);
   }, []);
