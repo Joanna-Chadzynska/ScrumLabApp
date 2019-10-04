@@ -11,8 +11,13 @@ const AddShopList = ({ onClose, addToShoplist }) => {
   const [errors, setErrors] = useState({
     item: ""
   });
+
   const addItem = (e) => {
-    setShopItem(e.target.value);
+    if (e.target.value.length <= 50) {
+      setShopItem(e.target.value);
+    } else {
+      setErrors({ item: "Nazwa jest za długa!" });
+    }
   };
 
   const deleteItem = (index) => {
@@ -55,6 +60,7 @@ const AddShopList = ({ onClose, addToShoplist }) => {
       return errors;
     }
   };
+
   return (
     <div className='backdrop'>
       <form className='shopList' onSubmit={handleSubmit}>
@@ -63,7 +69,7 @@ const AddShopList = ({ onClose, addToShoplist }) => {
           aria-hidden='true'
           onClick={onClose}
         />
-        <FormHeader />
+        <FormHeader shopList={shopList} errors={errors} shopItem={shopItem} />
         <FormInputs
           addItem={addItem}
           deleteItem={deleteItem}

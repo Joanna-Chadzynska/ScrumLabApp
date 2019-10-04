@@ -1,15 +1,13 @@
 import React from "react";
+import ErrorMessage from "../../../Przepisy/AddRecipe/Utils/ErrorMessage";
 
-const FormHeader = () => {
+const FormHeader = ({ shopList, errors, shoopItem }) => {
   return (
     <div className='addRecipe__header'>
       <h2>nowa lista zakupów</h2>
-      {/* {!recipe.name ||
-  !recipe.description ||
-  recipe.steps.length <= 0 ||
-  recipe.ingredients.length <= 0 ? (
-    <ErrorMessage>Uzupełnij zaznaczone pola!</ErrorMessage>
-  ) : null} */}
+      {shopList.length <= 0 ? (
+        <ErrorMessage>Uzupełnij zaznaczone pola!</ErrorMessage>
+      ) : null}
       <button type='submit'>Zapisz i zamknij</button>
     </div>
   );
