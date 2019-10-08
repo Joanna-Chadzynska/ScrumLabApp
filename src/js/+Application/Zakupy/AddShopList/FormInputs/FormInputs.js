@@ -2,12 +2,26 @@ import React from "react";
 import ShopItem from "./ShopItem";
 import "font-awesome/css/font-awesome.min.css";
 
-const FormInputs = ({ shoplist, shopItem, addItem, deleteItem, addToList }) => {
+const FormInputs = ({
+  shoplist,
+  shopItem,
+  addItem,
+  deleteItem,
+  addToList,
+  listName,
+  addDescription
+}) => {
   return (
     <div className='shopList__form-container'>
       <div className='shopList__input-box'>
         <label htmlFor='name'>Nazwa listy</label>
-        <input type='text' id='name' name='name' />
+        <input
+          type='text'
+          id='name'
+          name='name'
+          value={listName}
+          onChange={addDescription}
+        />
       </div>
       <br />
       <div className='shopList__input-box'>

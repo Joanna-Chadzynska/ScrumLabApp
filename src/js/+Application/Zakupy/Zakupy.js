@@ -1,6 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
+import ShopItem from "./ShopItem";
 
-const Zakupy = () => {
+const Zakupy = ({ shoplist }) => {
   return (
     <div className='itemsList'>
       <div className='itemsList__header'>
@@ -15,21 +17,15 @@ const Zakupy = () => {
         <table>
           <thead>
             <tr className='itemsList--headRow'>
-              <th>id</th>
               <th>nazwa</th>
-              <th>opis</th>
+              <th>lista</th>
               <th>akcje</th>
             </tr>
           </thead>
           <tbody>
-            {/* {recipes.map((recipe) => (
-                  <Recipe
-                    recipe={recipe}
-                    key={recipe.id}
-                    id={recipe.id}
-                    toggleEdit={toggleEdit}
-                  />
-                ))} */}
+            {shoplist.map((shop, idx) => (
+              <ShopItem key={idx} shop={shop} />
+            ))}
           </tbody>
         </table>
       </div>
@@ -37,4 +33,13 @@ const Zakupy = () => {
   );
 };
 
-export default Zakupy;
+const mapState = (state) => {
+  return {
+    shoplist: state.shoplist.shoplist
+  };
+};
+
+export default connect(
+  mapState,
+  null
+)(Zakupy);

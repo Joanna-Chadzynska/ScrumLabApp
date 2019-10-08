@@ -6,10 +6,15 @@ import FormInputs from "./FormInputs";
 
 const AddShopList = ({ onClose, addToShoplist }) => {
   const [shopItem, setShopItem] = useState("");
+  const [listName, setListName] = useState("");
   const [shopList, setShoplist] = useState([]);
-
+  const [list, setList] = useState({
+    shoplist: "",
+    description: ""
+  });
   const [errors, setErrors] = useState({
-    item: ""
+    item: "",
+    description: ""
   });
 
   const addItem = (e) => {
@@ -33,6 +38,10 @@ const AddShopList = ({ onClose, addToShoplist }) => {
     }
   };
 
+  const addDescription = (e) => {
+    setListName(e.target.value);
+  };
+
   const validate = () => {
     let isValid = true;
 
@@ -41,9 +50,19 @@ const AddShopList = ({ onClose, addToShoplist }) => {
       errors.item = "lista nie może być pusta!";
     } else {
       errors.item = "";
+      list.shoplist = shopList;
+    }
+
+    if (listName.length <= 0) {
+      isValid = false;
+      errors.description = "Nazwa jest za krótka!";
+    } else {
+      errors.description = "";
+      list.description = listName;
     }
 
     setErrors({ ...errors });
+    setList({ ...list });
     return isValid;
   };
 
@@ -51,7 +70,7 @@ const AddShopList = ({ onClose, addToShoplist }) => {
     e.preventDefault();
 
     if (validate()) {
-      addToShoplist(shopList);
+      addToShoplist(list);
       setShoplist([]);
       onClose();
       alert(`Dziękujemy za dodanie listy zakupów!`);
@@ -76,6 +95,8 @@ const AddShopList = ({ onClose, addToShoplist }) => {
           addToList={addToList}
           shoplist={shopList}
           shopItem={shopItem}
+          listName={listName}
+          addDescription={addDescription}
         />
       </form>
     </div>
