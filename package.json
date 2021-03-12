@@ -7,7 +7,7 @@
     "font-awesome": "^4.7.0",
     "html2canvas": "^1.0.0-rc.5",
     "json-server": "^0.15.0",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "jspdf-autotable": "^3.2.4",
     "node-sass": "^4.12.0",
     "pdfmake": "^0.1.60",
