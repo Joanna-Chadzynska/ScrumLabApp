@@ -9,7 +9,7 @@
     "json-server": "^0.15.0",
     "jspdf": "^1.5.3",
     "jspdf-autotable": "^3.2.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "pdfmake": "^0.1.60",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
